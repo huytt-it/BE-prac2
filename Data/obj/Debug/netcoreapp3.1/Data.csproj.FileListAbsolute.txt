@@ -1,0 +1,9 @@
+C:\Users\admin\source\repos\BE-prac2\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\admin\source\repos\BE-prac2\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\admin\source\repos\BE-prac2\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\admin\source\repos\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\admin\source\repos\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Users\admin\source\repos\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.pdb
