@@ -33,7 +33,7 @@ namespace BE_prac2
             services.AddBusinessServices();
             services.ConfigJwt(Configuration);
             services.ConfigCors();
-            services.AddControllers();
+            services.AddControllers();    
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
