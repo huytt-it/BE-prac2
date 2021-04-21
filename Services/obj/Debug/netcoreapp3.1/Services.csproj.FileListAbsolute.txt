@@ -10,3 +10,15 @@ C:\Users\admin\source\repos\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.c
 C:\Users\admin\source\repos\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
 C:\Users\admin\source\repos\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.dll
 C:\Users\admin\source\repos\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.pdb
+E:\SE\OJT\BE\BE-prac2\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+E:\SE\OJT\BE\BE-prac2\Services\bin\Debug\netcoreapp3.1\Services.dll
+E:\SE\OJT\BE\BE-prac2\Services\bin\Debug\netcoreapp3.1\Services.pdb
+E:\SE\OJT\BE\BE-prac2\Services\bin\Debug\netcoreapp3.1\Data.dll
+E:\SE\OJT\BE\BE-prac2\Services\bin\Debug\netcoreapp3.1\Data.pdb
+E:\SE\OJT\BE\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.csprojAssemblyReference.cache
+E:\SE\OJT\BE\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+E:\SE\OJT\BE\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+E:\SE\OJT\BE\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
+E:\SE\OJT\BE\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
+E:\SE\OJT\BE\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.dll
+E:\SE\OJT\BE\BE-prac2\Services\obj\Debug\netcoreapp3.1\Services.pdb

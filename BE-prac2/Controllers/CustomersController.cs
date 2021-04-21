@@ -44,9 +44,25 @@ namespace BE_prac2.Controllers
         [HttpPost]
         public ActionResult CreateProduct(Customer inCustomer)
         {
+            var customer = _customerServices.GetUserName(inCustomer.UserName);
+            if (customer != null)
+            {
+                return BadRequest(new { message = "User already exists" });
+            }
             _customerServices.CreateCustomer(inCustomer);
             return NoContent();
         }
 
+        [HttpDelete("{id:length(24)}")]
+        public ActionResult DeleteCustomer(string id)
+        {
+            var product = _customerServices.Get(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            _customerServices.DeleteCustomer(id);
+            return NoContent();
+        }
     }
 }

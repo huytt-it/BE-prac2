@@ -16,8 +16,12 @@ namespace Services.Services
     public interface ICustomerServices
     {
         Customer Authenticate(string username, string password);
+
+        Customer Get(string id);
+        Customer GetUserName(string userName);
         IEnumerable<Customer> GetAll();
         void CreateCustomer(Customer inCustomer);
+        void DeleteCustomer(string id);
 
     }
 
@@ -60,9 +64,20 @@ namespace Services.Services
 
         public IEnumerable<Customer> GetAll() => _db._customer.Find(cus => true).ToList();
 
+
+        public Customer Get(string id) => _db._customer.Find<Customer>(cus => cus.Id.Equals(id)).FirstOrDefault();
+        public Customer GetUserName(string userName) => _db._customer.Find<Customer>(cus => cus.UserName.Equals(userName)).FirstOrDefault();
+
         public void CreateCustomer(Customer inCustomer)
         {
             _db._customer.InsertOne(inCustomer);
+        }
+
+
+
+        public void DeleteCustomer(string id)
+        {
+            _db._customer.DeleteOne(cus => cus.Id.Equals(id));
         }
         
     }
