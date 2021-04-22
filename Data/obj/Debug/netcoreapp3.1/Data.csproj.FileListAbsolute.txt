@@ -7,3 +7,12 @@ C:\Users\admin\source\repos\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.AssemblyI
 C:\Users\admin\source\repos\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.dll
 C:\Users\admin\source\repos\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.pdb
+E:\SE\OJT\BE\BE-prac2\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+E:\SE\OJT\BE\BE-prac2\Data\bin\Debug\netcoreapp3.1\Data.dll
+E:\SE\OJT\BE\BE-prac2\Data\bin\Debug\netcoreapp3.1\Data.pdb
+E:\SE\OJT\BE\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
+E:\SE\OJT\BE\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+E:\SE\OJT\BE\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+E:\SE\OJT\BE\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+E:\SE\OJT\BE\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.dll
+E:\SE\OJT\BE\BE-prac2\Data\obj\Debug\netcoreapp3.1\Data.pdb

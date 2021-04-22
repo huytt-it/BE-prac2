@@ -21,7 +21,6 @@ namespace Data.DataAcess
             var session = _mongoClient.StartSession();
             return session;
         }
-
         public IMongoCollection<Product> _product => _db.GetCollection<Product>("product");
         public IMongoCollection<Customer> _customer => _db.GetCollection<Customer>("customer");
 
