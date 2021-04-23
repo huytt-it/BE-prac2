@@ -31,7 +31,8 @@ namespace BE_prac2.Extensions
 
         public static void ConfigCors(this IServiceCollection services)
         {
-            services.AddCors(options => options.AddPolicy("AllowAll", builder => builder.AllowAnyHeader()
+            services.AddCors(options => 
+                options.AddPolicy("AllowAll", builder => builder.AllowAnyHeader()
                 .AllowAnyMethod()
                 .SetIsOriginAllowed(_ => true)
                 .AllowCredentials()));

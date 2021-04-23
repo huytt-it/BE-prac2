@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BE_prac2.Extensions;
+using BE_prac2.Hubs;
 using Data.DataAcess;
 using Microsoft.Extensions.Options;
 using Services.Services;
@@ -32,6 +33,7 @@ namespace BE_prac2
             services.ConfigMongoDbContext(Configuration["ConnectionStrings:MongoDb:DevelopmentConnectionString"], Configuration["ConnectionStrings:MongoDb:DatabaseName"]);
             services.AddBusinessServices();
             services.ConfigJwt(Configuration);
+            services.AddSignalR();
             services.ConfigCors();
             services.AddControllers();    
         }
@@ -51,6 +53,8 @@ namespace BE_prac2
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/hubs/chat");
+
             });
         }
     }
