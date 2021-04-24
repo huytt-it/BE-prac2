@@ -31,7 +31,7 @@ namespace BE_prac2.Controllers
         [HttpPost("privateMessage")]
         public async Task PostPrivate(MessageModel message)
         {
-            await _chatHub.Clients.User(message.Name).ReceiveMessage(message);
+            await _chatHub.Clients.Client(message.IdConnection).ReceiveMessage(message);
         }
 
         [HttpGet]

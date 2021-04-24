@@ -14,17 +14,18 @@ namespace BE_prac2.Hubs
     public interface IChatClient
     {
         Task ReceiveMessage(MessageModel message);
-        Task OnConnectedAsync();
+        Task GetUserOnline(string idConnect);
+        Task GetUserDisconnect(String idConnect);
 
 
     }
     public class ChatHub:Hub<IChatClient>
     {
-        public List<UserHandler> _connectedId = new List<UserHandler>();
         public override Task OnConnectedAsync()
         {
 
             UserHandler.ConnectedIds.Add(new ConnectedUser{IdConnected = Context.ConnectionId});
+            Clients.All.GetUserOnline(Context.ConnectionId);
             return base.OnConnectedAsync();
         }
 
@@ -32,6 +33,7 @@ namespace BE_prac2.Hubs
         {
             var thisId =UserHandler.ConnectedIds.FirstOrDefault(x => x.IdConnected.Equals(Context.ConnectionId));
             UserHandler.ConnectedIds.Remove(thisId);
+            Clients.All.GetUserDisconnect(Context.ConnectionId);
             return base.OnDisconnectedAsync(exception);
         }
     }
