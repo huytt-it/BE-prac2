@@ -10,7 +10,9 @@ namespace Services.Services
     public interface IOrderServices
     {
         List<Order> Get();
+        List<Order> Get(string userName);
         Order CreateOrder(Order order);
+
     }
 
     public class OrderServices : IOrderServices
@@ -31,6 +33,9 @@ namespace Services.Services
             return order;
         }
 
+        public List<Order> Get(string userName)
+            => _db._order.Find(or => or.UserName == userName).ToList();
+        
 
 
 

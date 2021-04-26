@@ -23,6 +23,11 @@ namespace BE_prac2.Controllers
         [HttpGet]
         public ActionResult<List<Order>> Get() => _orderServices.Get();
 
+        [HttpGet("{userName}")]
+       
+
+        public ActionResult<List<Order>> Get(string userName) => _orderServices.Get(userName);
+
         [HttpPost]
         public ActionResult<Order> CreateOrder(Order inOrder)
         {
