@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using BE_prac2.Helpers;
 using Data.DataAcess;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -27,6 +22,7 @@ namespace BE_prac2.Extensions
         {
             services.AddScoped<IProductServices, ProductServices>();
             services.AddScoped<ICustomerServices, CustomerServices>();
+            services.AddScoped<IOrderServices, OrderServices>();
         }
 
         public static void ConfigCors(this IServiceCollection services)

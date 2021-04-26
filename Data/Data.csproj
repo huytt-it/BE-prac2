@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="DataAcess\MongoDbContext.cs~RF2e2e543c.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.12.2" />
   </ItemGroup>
 
