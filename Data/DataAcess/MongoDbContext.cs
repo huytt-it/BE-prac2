@@ -23,6 +23,7 @@ namespace Data.DataAcess
         }
         public IMongoCollection<Product> _product => _db.GetCollection<Product>("product");
         public IMongoCollection<Customer> _customer => _db.GetCollection<Customer>("customer");
+        public IMongoCollection<Order> _order => _db.GetCollection<Order>("cart");
 
     }
 }
