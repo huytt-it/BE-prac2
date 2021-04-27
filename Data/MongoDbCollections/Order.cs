@@ -17,5 +17,6 @@ namespace Data.MongoDbCollections
         public string Phone { get; set; }
         public decimal Total { get; set; }
         public List<Cart> Cart { get; set; }
+        public string Status { get; set; }
     }
 }

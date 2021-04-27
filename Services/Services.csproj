@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <None Remove="Services\CustomerServices.cs~RF149d6955.TMP" />
+    <None Remove="Services\OrderServices.cs~RF34578279.TMP" />
   </ItemGroup>
 
   <ItemGroup>

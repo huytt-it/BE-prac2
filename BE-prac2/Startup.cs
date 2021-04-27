@@ -33,6 +33,7 @@ namespace BE_prac2
             services.AddBusinessServices();
             services.ConfigJwt(Configuration);
             services.ConfigCors();
+            services.AddSignalR();
             services.AddControllers();    
         }
 
@@ -51,6 +52,7 @@ namespace BE_prac2
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<SignalRMessages>("/hubs/messages");
             });
         }
     }
