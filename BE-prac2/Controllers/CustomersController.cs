@@ -8,6 +8,7 @@ using Data.MongoDbCollections;
 using Data.ViewModels;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using MongoDB.Bson.Serialization.IdGenerators;
 using Services.Services;
 
 namespace BE_prac2.Controllers
@@ -41,8 +42,9 @@ namespace BE_prac2.Controllers
             return Ok(users);
         }
 
+
         [HttpPost]
-        public ActionResult CreateProduct(Customer inCustomer)
+        public ActionResult CreateCustomer(Customer inCustomer)
         {
             var customer = _customerServices.GetUserName(inCustomer.UserName);
             if (customer != null)
