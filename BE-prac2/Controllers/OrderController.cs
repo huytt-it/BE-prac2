@@ -24,15 +24,32 @@ namespace BE_prac2.Controllers
         public ActionResult<List<Order>> Get() => _orderServices.Get();
 
         [HttpGet("{userName}")]
-       
-
         public ActionResult<List<Order>> Get(string userName) => _orderServices.Get(userName);
 
         [HttpPost]
         public ActionResult<Order> CreateOrder(Order inOrder)
         {
+            inOrder.Status = "Unconfimred";
             _orderServices.CreateOrder(inOrder);
             return NoContent();
         }
+
+        [HttpPut("{id}")]
+        public ActionResult<Order> ConfirmOrder(string id, Order inOrder)
+        {
+            var order = _orderServices.GetById(id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            inOrder.Status = "Confirmed";
+
+            _orderServices.UpdateOrder(id, inOrder);
+            return inOrder;
+        }
+
+
+
     }
 }

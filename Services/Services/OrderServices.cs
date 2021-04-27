@@ -11,7 +11,9 @@ namespace Services.Services
     {
         List<Order> Get();
         List<Order> Get(string userName);
+        Order GetById(string id);
         Order CreateOrder(Order order);
+        Order UpdateOrder(string id, Order order);
 
     }
 
@@ -35,10 +37,15 @@ namespace Services.Services
 
         public List<Order> Get(string userName)
             => _db._order.Find(or => or.UserName == userName).ToList();
-        
 
+        public Order GetById(string id)
+            => _db._order.Find(or => or.Id == id).FirstOrDefault();
 
-
+        public Order UpdateOrder(string id, Order order)
+        {
+            _db._order.ReplaceOne(or => or.Id == id, order);
+            return order;
+        }
 
     }
 }
