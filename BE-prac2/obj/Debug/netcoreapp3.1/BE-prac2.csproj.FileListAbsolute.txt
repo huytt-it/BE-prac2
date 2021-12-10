@@ -90,3 +90,5 @@ E:\SE\OJT\BE\BE-prac2\BE-prac2\obj\Debug\netcoreapp3.1\BE-prac2.csproj.CopyCompl
 E:\SE\OJT\BE\BE-prac2\BE-prac2\obj\Debug\netcoreapp3.1\BE-prac2.dll
 E:\SE\OJT\BE\BE-prac2\BE-prac2\obj\Debug\netcoreapp3.1\BE-prac2.pdb
 E:\SE\OJT\BE\BE-prac2\BE-prac2\obj\Debug\netcoreapp3.1\BE-prac2.genruntimeconfig.cache
+E:\SE\OJT\BE\BE-prac2\BE-prac2\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+E:\SE\OJT\BE\BE-prac2\BE-prac2\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
